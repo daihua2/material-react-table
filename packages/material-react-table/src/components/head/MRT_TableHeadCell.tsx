@@ -326,7 +326,7 @@ export const MRT_TableHeadCell = <TData extends MRT_RowData>({
                       column={column}
                       table={table}
                       tableHeadCellRef={{
-                        current: tableHeadCellRefs.current?.[column.id]!,
+                        current: tableHeadCellRefs.current?.[column.id] ?? null,
                       }}
                     />
                   )}
