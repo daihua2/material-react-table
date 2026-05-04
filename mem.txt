@@ -24,3 +24,14 @@ index.js (295K)	CJS 格式
 index.d.ts (93K)	TypeScript 类型声明
 *.map	两份 source map
 主包不需要重新构建，当前用的 alias 直接指向的就是这个 dist/index.esm.js。只有 locale 产物是缺的，后台那个 build-locales.mjs 正在补上。
+
+方式 1（更快）：
+cd /mnt/d/Project/daqgate/ProtocolWeb
+rm -rf node_modules/material-react-table
+yarn install
+只重装这一个包，几秒钟。
+
+方式 2（等价）：
+cd /mnt/d/Project/daqgate/ProtocolWeb
+yarn add material-react-table@file:/mnt/d/Gits/material-react-table/packages/material-react-table
+但既然你已经加了 Vite alias，源码改了直接刷新就生效，这两种方式都不再需要了。只有在你想移除 alias、回到用 node_modules 版本时才需要执行一次。
