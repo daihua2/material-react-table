@@ -1,7 +1,10 @@
 {
   "version": "3.2.1",
   "license": "MIT",
-  "name": "material-react-table",
+  "name": "@daihua/material-react-table",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "A fully featured Material UI V9 implementation of TanStack React Table V8, written from the ground up in TypeScript.",
   "author": "KevinVandy",
   "keywords": [
@@ -13,7 +16,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/KevinVandy/material-react-table"
+    "url": "https://github.com/daihua2/material-react-table",
+    "directory": "packages/material-react-table"
   },
   "funding": {
     "type": "github",
